@@ -14,12 +14,19 @@ spec:
     files: github.com/everythingeverywhere/lab-st-test
   session:
     namespaces:
-      budget: small
+      budget: large
+    resources:
+      memory: 2Gi
     applications:
       terminal:
         enabled: true
         layout: split
       console:
         enabled: true
+        vendor: octant
       editor:
+        enabled: true
+      registry:
+        enabled: true
+      docker:
         enabled: true
