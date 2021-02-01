@@ -7,9 +7,8 @@ Run these commands in your terminal (please copy them verbatim to make the rest 
 `$ cd demo`
 
 
-```
-$ curl https://start.spring.io/starter.tgz -d artifactId=k8s-demo-app -d name=k8s-demo-app -d packageName=com.example.demo -d dependencies=web,actuator -d javaVersion=11 | tar -xzf -
-
+```execute-1
+curl https://start.spring.io/starter.tgz -d artifactId=k8s-demo-app -d name=k8s-demo-app -d packageName=com.example.demo -d dependencies=web,actuator -d javaVersion=11 | tar -xzf -
 ```
 
 
