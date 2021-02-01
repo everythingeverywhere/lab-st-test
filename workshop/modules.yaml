@@ -8,9 +8,9 @@ modules:
     exercises/01-sample-content:
         name: Sample Content
     exercises/02-create-spring-app:
-        name: TEST
+        name: This is a Title in Modules.yaml
     exercises/03-creating-the-resources:
-        name: TEST
+        name: This is a Title in Modules.yaml
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
