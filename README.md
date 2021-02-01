@@ -1,4 +1,4 @@
-LAB - Markdown Sample
+LAB - Spring on Kubernetes
 =====================
 
 Sample workshop content using Markdown formatting for pages.
