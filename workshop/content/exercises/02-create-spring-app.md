@@ -26,7 +26,7 @@ Be sure to add the @RestController annotation and not just the @GetMapping
 
 First, add the annonation
 ```editor:insert-lines-before-line
-file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+file: src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 5
 text: |
     import org.springframework.web.bind.annotation.GetMapping;
@@ -36,8 +36,7 @@ text: |
 ```
 
 ```editor:insert-lines-before-line
-file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 6
+file: src/main/java/com/example/demo/K8sDemoAppApplication.java
 text: |
     import org.springframework.web.bind.annotation.GetMapping;
     import org.springframework.web.bind.annotation.RestController;
@@ -47,7 +46,7 @@ text: |
 ```
 
 ```editor:insert-lines-before-line
-file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+file: src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 17
 text: |
     @GetMapping("/")
