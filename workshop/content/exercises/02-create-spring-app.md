@@ -37,6 +37,7 @@ text: |
 
 ```editor:insert-lines-before-line
 file: src/main/java/com/example/demo/K8sDemoAppApplication.java
+line: 6
 text: |
     import org.springframework.web.bind.annotation.GetMapping;
     import org.springframework.web.bind.annotation.RestController;
