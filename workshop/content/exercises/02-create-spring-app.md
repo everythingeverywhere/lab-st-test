@@ -37,7 +37,7 @@ text: |
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 5
+line: 6
 text: |
     import org.springframework.web.bind.annotation.GetMapping;
     import org.springframework.web.bind.annotation.RestController;
@@ -48,7 +48,7 @@ text: |
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 16
+line: 17
 text: |
     @GetMapping("/")
 	public String hello() {
