@@ -1,10 +1,16 @@
+---
 ## 
-**Create a Spring Boot App**
+**What You Will Do**
 
-In the Lab:
+*   Create a basic Spring Boot app
+*   Build a Docker image for the app
+*   Push the app to a Docker repo
+*   Create deployment and service descriptors for Kubernetes
+*   Deploy and run the app on Kubernetes
+*   External configuration and service discovery
+*   Deploy the Spring PetClinic App with MySQL
 
-Run these commands in your terminal (please copy them verbatim to make the rest of the lab run smoothly) \
-`$ cd demo`
+---
 
 
 ```execute-1
@@ -13,17 +19,66 @@ curl https://start.spring.io/starter.tgz -d artifactId=k8s-demo-app -d name=k8s-
 
 
 
-*   
-*   Open the IDE using the “IDE” button at the top of the lab - it might be obscured by the “Call for Assistance” button.
+Modify K8sDemoApplication.java and add a @RestController
 
-Working on your own:
-
+Be sure to add the @RestController annotation and not just the @GetMapping
 
 
-*   Click [here](https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.3.0.M4&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=k8s-demo-app&name=k8s-demo-app&description=Demo%20project%20for%20Spring%20Boot%20and%20Kubernetes&packageName=com.example.demo&dependencies=web,actuator&javaVersion=11) to download a zip of the Spring Boot app
-*   Unzip the project to your desired workspace and open in your favorite IDE
+First, add the annonation
+```editor:insert-lines-before-line
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+line: 5
+text: |
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RestController;
+
+
+```
+
+```editor:insert-lines-before-line
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+line: 5
+text: |
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RestController;
+
+    @RestController
+
+```
+
+```editor:insert-lines-before-line
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+line: 16
+text: |
+    @GetMapping("/")
+	public String hello() {
+		return "Hello World";
+	}
+    
+```
 
 
 
----
+Your file should look like the following 
+```java
+package com.example.demo;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+public class K8sDemoAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(K8sDemoAppApplication.class, args);
+	}
+
+	@GetMapping("/")
+	public String hello() {
+		return "Hello World";
+	}
+}
+```
