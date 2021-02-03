@@ -13,7 +13,7 @@
 ---
 
 ```execute-1
-cd demo
+mkdir demo && cd demo
 ```
 
 Download and extract the project from the Spring Initializr
