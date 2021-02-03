@@ -5,7 +5,7 @@
 In a terminal window run, the app will start on port `8080`.
 
 ```execute-1
-$ ./mvnw spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ---
