@@ -13,6 +13,8 @@ modules:
         name: Run the App
     exercises/04-containerize:
         name: Containerize the App
+    exercises/05-registry:
+        name: Putting The Container In A Registry
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
