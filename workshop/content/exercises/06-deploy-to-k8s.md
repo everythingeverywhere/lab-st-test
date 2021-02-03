@@ -117,24 +117,21 @@ status:
 *   You can watch as the pods and services get created
 
 
-```
-watch -n 1 kubectl get all
-
-```
 
 
 
-*   In a separate terminal window run
-
-
+Apply your manifests to get everything running.
 ```execute-1
-kubectl apply -f ./k8s --watch
+kubectl apply -f ./k8s 
 ```
 
-You should see something like the following
+Watch the objects being created.
+```execute-1
+watch -n 1 kubectl get all
 ```
-Every 1.0s: kubectl get all                                 
 
+You should see something like the following:
+```                 
 NAME                               READY   STATUS    RESTARTS   AGE
 pod/k8s-demo-app-d6dd4c4d4-7t8q5   1/1     Running   0          68m
 
@@ -147,7 +144,6 @@ deployment.apps/k8s-demo-app   1/1     1            1           68m
 NAME                                     DESIRED   CURRENT   READY   AGE
 replicaset.apps/k8s-demo-app-d6dd4c4d4   1         1         1       68m
 ```
-
 
 `watch` is a useful command line tool that you can install on [Linux](https://www.2daygeek.com/linux-watch-command-to-monitor-a-command/) and [OSX](https://osxdaily.com/2010/08/22/install-watch-command-on-os-x/). All it does is continuously executes the command you pass it. You can just run the `kubectl` command specified after the `watch` command but the output will be static as opposed to updating constantly.
 
