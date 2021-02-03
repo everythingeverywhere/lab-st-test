@@ -8,12 +8,12 @@ the documentation for eduk8s at:
 
 * https://docs.eduk8s.io
 
-If you already have the eduk8s operator installed and configured, to deploy
+If you already have the eduk8s operator installed and configured, as well as having this repo cloned to deploy
 and view this sample workshop, run:
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/lab-st-test/master/resources/workshop.yaml
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/lab-st-test/master/resources/training-portal.yaml
+kubectl apply -f ./resources/workshop.yaml
+kubectl apply -f ./resources/training-portal.yaml
 ```
 
 This will deploy a training portal hosting just this workshop. To get the
