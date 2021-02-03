@@ -1,0 +1,14 @@
+name: Spring on Kubernetes
+
+modules:
+    activate:
+    - workshop-overview
+    - setup-environment
+    - exercises/01-sample-content
+    - exercises/02-create-spring-app
+    - exercises/03-run-the-app
+    - exercises/04-containerize
+    - exercises/05-registry
+    - exercises/06-deploy-to-k8s
+    - exercises/07-testing-app
+    - workshop-summary
