@@ -13,10 +13,10 @@ apiVersion: v1`
 
 ```editor:insert-value-into-yaml
 file: k8s/service.yaml
-path: spec
+path: spec.type
 text: |
 value:
-      type: LoadBalancer
+      LoadBalancer
 
 ```
 
