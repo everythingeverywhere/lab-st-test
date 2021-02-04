@@ -17,7 +17,7 @@ text: "type: ClusterIP"
 
 Delete the 16th line `type: ClusterIp` and create `updated-service.yaml'
 ```execute-1
-sed '16d' k8s/service.yaml > updated-service.yaml
+sed '16d' k8s/service.yaml > k8s/updated-service.yaml
 ```
 
 Insert the correct value into your service config.
