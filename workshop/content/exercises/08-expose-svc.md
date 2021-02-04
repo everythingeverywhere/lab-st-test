@@ -9,22 +9,25 @@ NOTE: `LoadBalancer` features are platform specific. The visibility of your app 
 
 In `k8s/service.yaml` and change `ClusterIp` to `LoadBalancer`
 
+```execute-1
+sed '16d' k8s/service.yaml
+```
+
 
 ```editor:insert-value-into-yaml
 file: k8s/service.yaml
-path: spec.type
+path: spec
 text: |
 value:
-      LoadBalancer
+      type: LoadBalancer
 
 ```
 
-
+Change the the type to LoadBalancer, click below to highlight the value that needs to change.
 ```editor:select-matching-text
 file: k8s/service.yaml
-text: type
+text: "type: ClusterIP"
 ```
-
 
 *   
 
