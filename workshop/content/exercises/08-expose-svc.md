@@ -22,7 +22,7 @@ value:
 
 ```editor:select-matching-text
 file: k8s/service.yaml
-text: type:
+text: type
 ```
 
 
