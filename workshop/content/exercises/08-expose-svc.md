@@ -26,7 +26,7 @@ file: k8s/updated-service.yaml
 path: spec
 text: |
 value:
-      type: LoadBalancer
+        type: LoadBalancer
 
 ```
 
@@ -38,7 +38,7 @@ rm k8s/service.yaml
 
 Now, apply the updated `service.yaml` and your Kubernetes deployment.
 ```execute-1
-kubectl apply -f ./k8s`
+kubectl apply -f ./k8s
 ```
 
 *   
