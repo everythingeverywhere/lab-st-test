@@ -13,7 +13,7 @@ IP=$(minikube ip)
 # Configure operator with domain name
 kubectl set env deployment/eduk8s-operator -n eduk8s INGRESS_DOMAIN=$IP.nip.io
 
-# If working with large images configure nginx like so:
+# If working with large images configure nginx add `proxy-body-size: 1g` in data section:
 #  kubectl edit configmap nginx-load-balancer-conf -n kube-system
 
 # Show if if above worked
@@ -27,5 +27,3 @@ kubectl apply -f ./resources/training-portal.yaml
 
 # Get trainingportals, will have to 
 kubectl get trainingportal --watch
-
-echo "Until you have password, keep executing: kubectl get trainingportal again "
