@@ -5,7 +5,7 @@
 
 
 ```editor:insert-value-into-yaml
-file: ~/exercises/deployment.yaml
+file: k8s/deployment.yaml
 path: spec.template.spec.containers
 value:
         lifecycle:

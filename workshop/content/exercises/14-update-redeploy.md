@@ -5,11 +5,11 @@
 Let’s update the `pom.xml` to configure the image name explicitly:
 
 
-```
-<properties>
-    ...
+```editor:insert-lines-before-line
+file: demo/pom.xml
+line: 17
+text: |
 	<spring-boot.build-image.imageName>localhost:5000/apps/demo</spring-boot.build-image.imageName>
-</properties>
 ```
 
 
@@ -24,10 +24,8 @@ $ kubectl apply -f ./k8s
 ```
 
 
-
 *   An updated Pod will be created and started and the old one will be terminated
 *   If you use `watch -n 1 kubectl get all` to see all the Kubernetes resources you will be able to see this appen in real time
-
 
 
 ---
