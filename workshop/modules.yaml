@@ -23,6 +23,8 @@ modules:
         name: Exposing the Service
     exercises/09-test-loadbalancer:
         name: Testing the Public LoadBalancer
+    exercises/10-best-practice:
+        name: Best Practices
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

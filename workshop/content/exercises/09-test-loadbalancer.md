@@ -12,7 +12,6 @@ For a local cluster we need to manually set the external IP address to the IP ad
 kubectl patch service k8s-demo-app -p '{"spec": {"type": "LoadBalancer", "externalIPs":["172.18.0.2"]}}'
 ```
 
-
 *   
 
 
