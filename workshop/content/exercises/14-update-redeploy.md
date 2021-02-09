@@ -16,16 +16,24 @@ text: |
 Then we can build and push the changes and re-deploy:
 
 
-```
-$ ./mvnw clean spring-boot:build-image
-$ docker push localhost:5000/apps/demo
-$ kubectl apply -f ./k8s
-
+```execute-1
+/mvnw clean spring-boot:build-image
 ```
 
+```execute-1
+docker push {{ registry_host }}/apps/demo
+```
 
-*   An updated Pod will be created and started and the old one will be terminated
-*   If you use `watch -n 1 kubectl get all` to see all the Kubernetes resources you will be able to see this appen in real time
+
+*   An updated Pod will be created and started and the old one will be terminated when you re-deploy.
+```execute-1
+kubectl apply -f ./k8s
+```
 
 
+
+* To see all the Kubernetes resources you will be able to see this appen in real time
+```execute-1
+watch -n 1 kubectl get all
+```
 ---
