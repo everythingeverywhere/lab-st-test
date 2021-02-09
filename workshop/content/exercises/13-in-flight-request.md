@@ -10,7 +10,7 @@
 ```editor:append-lines-to-file
 file: demo/src/main/resources/application.properties
 text: |
-server.shutdown=graceful
+        server.shutdown=graceful
 ```
 
 
