@@ -3,7 +3,7 @@
 
 ```editor:insert-value-into-yaml
 file: k8s/deployment.yaml
-path: spec.template.spec.containers
+path: spec.template.spec.containers.[0]
 value:
         readinessProbe:
           httpGet:

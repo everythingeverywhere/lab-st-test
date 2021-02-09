@@ -17,10 +17,12 @@ Then we can build and push the changes and re-deploy:
 
 
 ```execute-1
+cd demo &&
 ./mvnw clean spring-boot:build-image
 ```
 
 ```execute-1
+cd .. &&
 docker push {{ registry_host }}/apps/demo
 ```
 

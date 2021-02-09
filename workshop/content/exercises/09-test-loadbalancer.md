@@ -26,6 +26,12 @@ You sould see something like this:
 NAME           TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)        AGE
 k8s-demo-app   LoadBalancer   10.100.200.243   172.18.0.2   80:31428/TCP   85m
 ```
+
+Exit from the watch command
+```terminal:interrupt-1
+```
+
+
 Now test your endpoint
 ```execute-2
 curl http://172.18.0.2
