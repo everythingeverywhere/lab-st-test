@@ -17,7 +17,7 @@ Then we can build and push the changes and re-deploy:
 
 
 ```execute-1
-/mvnw clean spring-boot:build-image
+./mvnw clean spring-boot:build-image
 ```
 
 ```execute-1
@@ -35,5 +35,8 @@ kubectl apply -f ./k8s
 * To see all the Kubernetes resources you will be able to see this appen in real time
 ```execute-1
 watch -n 1 kubectl get all
+```
+
+```terminal:interrupt-1
 ```
 ---
