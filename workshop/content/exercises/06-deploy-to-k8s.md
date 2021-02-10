@@ -22,11 +22,11 @@
 
 
 ```execute-1
-cd .. && mkdir k8s
+cd ~ && mkdir k8s
 kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > k8s/deployment.yaml
 ```
 
-*   The resulting `deployment.yaml` should look similar to this
+*   The resulting `k8s/deployment.yaml` should look similar to this.
 
 ```
 apiVersion: apps/v1
@@ -135,6 +135,6 @@ replicaset.apps/k8s-demo-app-d6dd4c4d4   1         1         1       68m
 
 Please, terminate the watch process to continue.
 
-```terminal:interrupt-all
+```terminal:interrupt-1
 ```
 ---

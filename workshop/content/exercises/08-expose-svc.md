@@ -20,7 +20,7 @@ text: |
           app: k8s-demo-app
       spec:
         rules:
-        - host: k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}
+        - host: YourHost
           http:
             paths:
             - path: "/"
@@ -30,6 +30,11 @@ text: |
                   name: k8s-demo-app
                   port: 
                     number: 8080
+```
+
+Now, change the the type to `LoadBalancer`
+```execute-1
+ sed 's/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g' k8s/ingress.yaml -i
 ```
 
 *   
@@ -48,9 +53,6 @@ watch -n 1 kubectl get all
 Be sure to stop the `kubectl port-forward` process before moving on.
 ```terminal:interrupt-1
 ```
----
-*   
-
 
 ---
 
