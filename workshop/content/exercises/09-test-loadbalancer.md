@@ -1,6 +1,6 @@
 
 ### 
-**Testing The Public LoadBalancer**
+**Testing The Public Ingress**
 
 
 
@@ -18,7 +18,7 @@ kubectl patch service k8s-demo-app -p '{"spec": {"type": "LoadBalancer", "extern
 > The `-w` option of `kubectl` lets you watch a single Kubernetes resource.
 
 ```execute-1
-kubectl get service k8s-demo-app -w
+kubectl get ingress k8s-demo-app -w
 ```
 
 You sould see something like this:

@@ -39,6 +39,8 @@ kubectl apply -f ./k8s
 watch -n 1 kubectl get all
 ```
 
+To exit running process
 ```terminal:interrupt-1
 ```
+
 ---
