@@ -32,12 +32,14 @@ Exit from the watch command
 ```
 
 
-Now test your endpoint
+Test your endpoint
 ```execute-2
 curl http://172.18.0.2
 ```
 
-
+Kill the running processes
+```terminal:interrupt-all
+```
 
 
 ---
