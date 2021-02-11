@@ -35,6 +35,12 @@ modules:
         name: Update The Container & Apply The Updated Deployment YAML
     exercises/15-clean-up:
         name: Cleaning-up
+    exercises/16-skaffold-intro:
+        name: Skaffold
+    exercises/17-dev-test-skaffold:
+        name: Development with Skaffold
+    exercises/18-change-controller:
+        name: Make Changes to the Controller
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

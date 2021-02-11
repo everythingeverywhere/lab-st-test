@@ -19,4 +19,7 @@ modules:
     - exercises/13-in-flight-request
     - exercises/14-update-redeploy
     - exercises/15-clean-up
+    - exercises/16-skaffold-intro
+    - exercises/17-dev-test-skaffold
+    - exercises/18-change-controller
     - workshop-summary
