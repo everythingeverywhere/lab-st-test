@@ -22,7 +22,7 @@ cd demo &&
 ```
 
 ```execute-1
-cd .. &&
+cd ~ &&
 docker push {{ registry_host }}/apps/demo
 ```
 

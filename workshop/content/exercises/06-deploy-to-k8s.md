@@ -135,6 +135,8 @@ replicaset.apps/k8s-demo-app-d6dd4c4d4   1         1         1       68m
 
 Please, terminate the watch process to continue.
 
-```terminal:interrupt-1
+```terminal:interrupt
+session: 1
 ```
+
 ---

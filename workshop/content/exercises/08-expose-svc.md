@@ -32,9 +32,15 @@ text: |
                     number: 8080
 ```
 
-Now, change the the type to `LoadBalancer`
+Now, add your host 
 ```execute-1
- sed 's/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g' k8s/ingress.yaml -i
+ sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g k8s/ingress.yaml -i
+```
+
+Take a peek at your file to verify your host populted.
+```editor:select-matching-text
+file: k8s/ingress.yaml
+text: "host" 
 ```
 
 *   
@@ -44,16 +50,4 @@ Now, apply the `ingress.yaml`, your service, and your Kubernetes deployment.
 kubectl apply -f ./k8s
 ```
 
-
-Watch the objects being created.
-```execute-1
-watch -n 1 kubectl get all
-```
-
-Be sure to stop the `kubectl port-forward` process before moving on.
-```terminal:interrupt-1
-```
-
 ---
-
-
