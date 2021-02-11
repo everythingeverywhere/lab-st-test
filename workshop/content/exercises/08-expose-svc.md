@@ -32,7 +32,7 @@ text: |
                     number: 8080
 ```
 
-Now, add your host 
+Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
 ```execute-1
  sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g k8s/ingress.yaml -i
 ```

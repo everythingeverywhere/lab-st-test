@@ -23,27 +23,27 @@ v1.9.1
 
 
 ```editor:append-lines-to-file
-file: k8s/skaffold.yaml
+file: skaffold.yaml
 text: |
-apiVersion: skaffold/v2beta5
-kind: Config
-metadata:
-  name: k-s-demo-app--
-build:
-  artifacts:
-  - image: localhost:5000/apps/demo
-    buildpacks:
-      builder: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
-      dependencies:
-        paths:
-        - src
-        - pom.xml
-deploy:
-  kubectl:
-    manifests:
-    - k8s/deployment.yaml
-    - k8s/service.yaml
-    - k8s/ingress.yaml
+        apiVersion: skaffold/v2beta5
+        kind: Config
+        metadata:
+        name: k-s-demo-app--
+        build:
+        artifacts:
+        - image: localhost:5000/apps/demo
+            buildpacks:
+            builder: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
+            dependencies:
+                paths:
+                - src
+                - pom.xml
+        deploy:
+        kubectl:
+            manifests:
+            - k8s/deployment.yaml
+            - k8s/service.yaml
+            - k8s/ingress.yaml
 ```
 
 

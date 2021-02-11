@@ -38,7 +38,4 @@ curl localhost:4503; echo
 Hello World
 ```
 
-
-
-
 ---

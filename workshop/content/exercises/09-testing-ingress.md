@@ -1,9 +1,4 @@
 
-### 
-**Testing The Public Ingress**
-
-
-
 In a Cloud environment (Google, Amazon, Azure etc.), Kubernetes will assign the service an external ip
 
 > The `-w` option of `kubectl` lets you watch a single Kubernetes resource.
@@ -19,7 +14,8 @@ k8s-demo-app   <none>   k8s-demo-app-lab-st-test-w01-s001.192.168.64.3.nip.io   
 ```
 
 Exit from the watch command
-```terminal:interrupt-1
+```terminal:interrupt
+session: 1
 ```
 
 

@@ -21,8 +21,8 @@ modules:
         name: Testing the App
     exercises/08-expose-svc:
         name: Exposing the Service
-    exercises/09-test-loadbalancer:
-        name: Testing the Public LoadBalancer
+    exercises/09-test-ingress:
+        name: Testing the Public Ingress
     exercises/10-best-practice:
         name: Best Practices
     exercises/11-add-probes:
