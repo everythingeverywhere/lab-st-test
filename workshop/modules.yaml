@@ -49,6 +49,25 @@ modules:
         name: Setting Up A Remote Debug Configuration in VS Code
     exercises/22-create-launcher:
         name: Create a Launcher
+    exercises/23-kustomize:
+        name: Kustomize
+    exercises/24-gs-kustomize:
+        name: Getting Started with exercises/23-kustomize
+    exercises/25-kutomize.yaml:
+        name: 'kustomize.yaml'
+    exercises/26-customize-deployment:
+        name: Customizeing Our Deployment
+    exercises/27-run-kustomize:
+        name: Running Kustomize
+    exercises/28-pipe-to-kustomize:
+        name: Piping to Kustomize
+    exercises/29-clean-up:
+        name: Clean Up
+    exercises/30-kustomize-skaffold:
+        name: Using Kustomize with Skaffold
+    exercises/31-test-skaffold-kustomize:
+        name: Testing Skaffold + Kustomize
+
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

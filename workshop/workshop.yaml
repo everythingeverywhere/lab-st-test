@@ -25,4 +25,14 @@ modules:
     - exercises/19-cleanup
     - exercises/20-debug-skaffold
     - exercises/22-create-launcher
+    - exercises/23-kustomize
+    - exercises/23-kustomize
+    - exercises/24-gs-kustomize
+    - exercises/25-kutomize.yaml
+    - exercises/26-customize-deployment
+    - exercises/27-run-kustomize
+    - exercises/28-pipe-to-kustomize
+    - exercises/29-clean-up
+    - exercises/30-kustomize-skaffold
+    - exercises/31-test-skaffold-kustomize
     - workshop-summary
