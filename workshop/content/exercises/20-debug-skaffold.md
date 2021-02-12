@@ -26,6 +26,5 @@ Port forwarding pod/k8s-demo-app-75d4f4b664-2jqvx in namespace rbaxter, remote p
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image2.png "image_tooltip")
-
+(Click image to enlarge)
+![alt_text](images/image2.png "~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java")
