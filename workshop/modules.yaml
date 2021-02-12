@@ -21,7 +21,7 @@ modules:
         name: Testing the App
     exercises/08-expose-svc:
         name: Exposing the Service
-    exercises/09-test-ingress:
+    exercises/09-testing-ingress:
         name: Testing the Public Ingress
     exercises/10-best-practice:
         name: Best Practices
@@ -41,6 +41,14 @@ modules:
         name: Development with Skaffold
     exercises/18-change-controller:
         name: Make Changes to the Controller
+    exercises/19-cleanup:
+        name: Cleaning Everything Up
+    exercises/20-debug-skaffold:
+        name: Debugging with Skaffold
+    exercises/21-remote-debug:
+        name: Setting Up A Remote Debug Configuration in VS Code
+    exercises/22-create-launcher:
+        name: Create a Launcher
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

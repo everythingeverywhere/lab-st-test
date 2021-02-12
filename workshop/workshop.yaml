@@ -12,7 +12,7 @@ modules:
     - exercises/06-deploy-to-k8s
     - exercises/07-testing-app
     - exercises/08-expose-svc
-    - exercises/09-test-ingress
+    - exercises/09-testing-ingress
     - exercises/10-best-practice
     - exercises/11-add-probes
     - exercises/12-graceful-shutdown
@@ -22,4 +22,7 @@ modules:
     - exercises/16-skaffold-intro
     - exercises/17-dev-test-skaffold
     - exercises/18-change-controller
+    - exercises/19-cleanup
+    - exercises/20-debug-skaffold
+    - exercises/22-create-launcher
     - workshop-summary

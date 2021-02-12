@@ -12,8 +12,6 @@ Run the following command to begin developing with Skaffold.
 skaffold dev --port-forward
 ```
 
-
-
 ---
 
 ### 
