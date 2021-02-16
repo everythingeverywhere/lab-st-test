@@ -59,7 +59,7 @@ modules:
         name: Customizeing Our Deployment
     exercises/27-run-kustomize:
         name: Running Kustomize
-    exercises/28-pipe-to-kustomize:
+    exercises/28-pipe-to-kubectl:
         name: Piping to Kustomize
     exercises/29-clean-up:
         name: Clean Up
