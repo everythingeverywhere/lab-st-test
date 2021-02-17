@@ -34,4 +34,18 @@ modules:
     - exercises/29-clean-up
     - exercises/30-kustomize-skaffold
     - exercises/31-test-skaffold-kustomize
+    - exercises/32-externalized-config
+    - exercises/33-configmaps-in-apps
+    - exercises/34-rm-configmap-deployment
+    - exercises/35-configmaps-sb-config
+    - exercises/36-configmap-kustomize
+    - exercises/37-test-new-deploy
+    - exercises/38-service-discovery
+    - exercises/39-deploy-another
+    - exercises/40-mod-kustomize-config
+    - exercises/41-request-svc
+    - exercises/42-test-app
+    - exercises/43-run-petclinic
+    - exercises/44-deploy-petclinic
+    - exercises/45-dissect-petclinic
     - workshop-summary
