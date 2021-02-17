@@ -10,7 +10,7 @@ spec:
   duration: 15m
   url: https://github.com/everythingeverywhere/lab-st-test
   content:
-    image: jdk11-environment:master
+    image:  quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
     files: github.com/everythingeverywhere/lab-st-test
   session:
     namespaces:

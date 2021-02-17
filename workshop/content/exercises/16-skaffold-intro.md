@@ -28,18 +28,18 @@ text: |
         apiVersion: skaffold/v2beta5
         kind: Config
         metadata:
-        name: k-s-demo-app--
+          name: k-s-demo-app--
         build:
-        artifacts:
-        - image: localhost:5000/apps/demo
+          artifacts:
+          - image: localhost:5000/apps/demo
             buildpacks:
-            builder: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
-            dependencies:
+              builder: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
+              dependencies:
                 paths:
-                - src
-                - pom.xml
+                - demo/src
+                - demo/pom.xml
         deploy:
-        kubectl:
+          kubectl:
             manifests:
             - k8s/deployment.yaml
             - k8s/service.yaml
