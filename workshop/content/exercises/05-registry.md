@@ -38,4 +38,9 @@ You can now see the image in the registry
 curl $REGISTRY_USERNAME:$REGISTRY_PASSWORD@{{ registry_host }}/v2/_catalog
 ```
 
+You should see then get a print out like the this.
+```
+{"repositories":["apps/demo"]}
+```
+
 ---

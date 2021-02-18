@@ -8,7 +8,6 @@
 To check your version of Skaffold.
 ```execute-1
 skaffold version
-v1.9.1
 ```
 
 

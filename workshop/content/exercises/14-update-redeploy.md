@@ -34,7 +34,7 @@ kubectl apply -f ./k8s
 
 
 
-To see all the Kubernetes resources you will be able to see this appen in real time
+To see all the Kubernetes resources you will be able to see this happen in real time
 ```execute-1
 watch -n 1 kubectl get all
 ```
