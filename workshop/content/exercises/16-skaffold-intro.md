@@ -35,8 +35,8 @@ text: |
               builder: docker.io/paketobuildpacks/builder:base
               dependencies:
                 paths:
-                - demo/src
-                - demo/pom.xml
+                - src
+                - pom.xml
         deploy:
           kubectl:
             manifests:

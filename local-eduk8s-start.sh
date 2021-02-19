@@ -28,7 +28,7 @@ kubectl apply -f https://raw.githubusercontent.com/everythingeverywhere/lab-st-t
 
 
 # deploy training portal 
-kubectl apply -f ./resources/training-portal.yaml
+# kubectl apply -f ./resources/training-portal.yaml
 
 # Get trainingportals, will have to 
 kubectl get trainingportal --watch
