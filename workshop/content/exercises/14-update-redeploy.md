@@ -9,7 +9,7 @@ Let’s update the `pom.xml` to configure the image name explicitly:
 file: demo/pom.xml
 line: 17
 text: |
-	<spring-boot.build-image.imageName>localhost:5000/apps/demo</spring-boot.build-image.imageName>
+	<spring-boot.build-image.imageName>$REGISTRY_USERNAME:$REGISTRY_PASSWORD@{{ registry_host }}/v2/_catalog</spring-boot.build-image.imageName>
 ```
 
 
