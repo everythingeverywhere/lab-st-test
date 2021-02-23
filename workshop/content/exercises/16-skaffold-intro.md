@@ -40,9 +40,9 @@ text: |
         deploy:
           kubectl:
             manifests:
-            - k8s/deployment.yaml
-            - k8s/service.yaml
-            - k8s/ingress.yaml
+            - ~/demo/k8s/deployment.yaml
+            - ~/demo/k8s/service.yaml
+            - ~/demo/k8s/ingress.yaml
 ```
 
 
