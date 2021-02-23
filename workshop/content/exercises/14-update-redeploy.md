@@ -1,6 +1,4 @@
 
-### 
-**Update The Container & Apply The Updated Deployment YAML**
 
 Let’s update the `pom.xml` to configure the image name explicitly:
 
@@ -9,7 +7,7 @@ Let’s update the `pom.xml` to configure the image name explicitly:
 file: ~/demo/pom.xml
 line: 17
 text: |
-	<spring-boot.build-image.imageName>$REGISTRY_USERNAME:$REGISTRY_PASSWORD@{{ registry_host }}/v2/_catalog</spring-boot.build-image.imageName>
+	<spring-boot.build-image.imageName>{{registry_username}:{{registry_password}}@{{ registry_host }}/v2/_catalog</spring-boot.build-image.imageName>
 ```
 
 
@@ -17,13 +15,10 @@ Then we can build and push the changes and re-deploy:
 
 
 ```execute-1
-cd demo &&
 ./mvnw clean spring-boot:build-image
 ```
 
-```execute-1
-cd ~ &&
-docker push {{ registry_host }}/apps/demo
+```execute-1docker push {{ registry_host }}/apps/demo
 ```
 
 

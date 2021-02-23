@@ -45,7 +45,7 @@ line: 17
 text: |
     @GetMapping("/")
 	public String hello() {
-		return "Hello World";
+		return "Hello\n start.spring.io\n";
 	}
     
 ```
