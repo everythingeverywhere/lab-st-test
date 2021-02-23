@@ -22,7 +22,7 @@ skaffold version
 
 
 ```editor:append-lines-to-file
-file: skaffold.yaml
+file: ~/demo/skaffold.yaml
 text: |
         apiVersion: skaffold/v2beta5
         kind: Config
