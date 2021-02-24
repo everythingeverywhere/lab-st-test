@@ -18,7 +18,8 @@ Then we can build and push the changes and re-deploy:
 ./mvnw clean spring-boot:build-image
 ```
 
-```execute-1docker push {{ registry_host }}/apps/demo
+```execute-1
+docker push {{ registry_host }}/apps/demo
 ```
 
 
